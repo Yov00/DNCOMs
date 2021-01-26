@@ -175,6 +175,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductsManagerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -338,6 +339,10 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\ProductsManager\Index.cshtml" />
+    <Content Include="Views\ProductsManager\Create.cshtml" />
+    <Content Include="Views\ProductsManager\Edit.cshtml" />
+    <Content Include="Views\ProductsManager\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -352,6 +357,24 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DNCOMs.Core\DNCOMs.Core.csproj">
+      <Project>{48933a9d-7b03-4ad1-a3fd-9e9513b130b9}</Project>
+      <Name>DNCOMs.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DNCOMs.DataAccess.InMemory\DNCOMs.DataAccess.InMemory.csproj">
+      <Project>{ce6e543c-9d24-47d2-923f-ecf3ffeab2a2}</Project>
+      <Name>DNCOMs.DataAccess.InMemory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DNCOMs.DataAccess.SQL\DNCOMs.DataAccess.SQL.csproj">
+      <Project>{68d376c0-4d78-488f-a6fb-62e3db2b18f0}</Project>
+      <Name>DNCOMs.DataAccess.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DNCOMs.Services\DNCOMs.Services.csproj">
+      <Project>{e297966b-546d-45d2-bfbe-ccdff0f39532}</Project>
+      <Name>DNCOMs.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
